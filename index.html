@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <!-- <meta charset="utf-8"> -->
     <title>Firefox Relay</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -36,7 +37,7 @@
         </section>
         <hr/>
         <div id=button>
-            <button id="alias-button">+ Generate New Alias</button>
+            <button id="alias-button" onclick="alert('This creates a new Alias!')">+ Generate New Alias</button>
         </div> 
         <p id="mobile-alias-p"><strong>4</strong> remaining aliases</p>
 
@@ -47,9 +48,9 @@
                     <p id="account-name-heading"></p>
                     <p id="edit-account-heading">Edit account name <span><i class="fas fa-pencil-alt"></i></span></p>
 
-                    <form id="input-form">
+                    <form id="input-form" onsubmit="return false">
                         <input id="account-name" type="text" placeholder="Account Name">
-                        <button id="account-button" type="submit">Apply</button> 
+                        <button id="account-button" type="button">Apply</button> 
                     </form>
                 </div>
                 <div id="forwarding">
