@@ -14,3 +14,493 @@
 }
 
 /* Put CSS Styles Here */
+:root {
+    /* Colorful gradient used in the navigation bar */
+  --navGradient: linear-gradient(-90deg, #ff9100 0%, #f10366 50%, #6173ff 100%);
+}
+
+/* Body font */
+.font-inter {
+    font-family: "Inter UI", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* Used for all titles/labels/buttons  */
+.font-metropolis {
+    font-family: "Metropolis", Arial, Helvetica, sans-serif;
+}
+
+/* Put CSS Styles Here */
+
+.grey {
+    color: grey;
+}
+
+.light-bold {
+    font-weight:500;
+    color: black;
+}
+
+body {
+    width: 80%;
+    font-size: .75em;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    height: 50px;
+    background-color: #27294e;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-relay {
+    height: 30px;
+    padding: 10px;
+}   
+
+nav {
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+a:hover {
+    color: rgb(255, 113, 19);
+    font-size: 1.25em;
+}
+
+#home {
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(
+        to left,
+        #ff9100 0%,
+        #f10366 50%,
+        #6173ff 100% 
+    ) 0 0 100% 0/0 0 3px 0 stretch;
+}
+
+#content {
+    width:100%;
+    margin: 0 auto;
+    background-color: rgb(247, 245, 245);
+    background-image: url("data:image/svg+xml,%3Csvg data-name='a39ecd2d-e132-41d7-a300-574f099f504f' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 103.12 74.15'%3E%3Cdefs%3E%3CradialGradient id='a' cx='48.75' cy='20.16' r='37.71' gradientTransform='matrix(1 0 0 -1 0 74)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23fff'/%3E%3Cstop offset='1'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cpath d='M62.23 34l-4.65 4.44a12.68 12.68 0 01-17.56 0l-4.12-3.96-1.59 1.59L-.59 71.6a6.92 6.92 0 005.18 2.12h88.32a7.36 7.36 0 005.18-2.12L63.82 35.65z' transform='translate(2.81 .42)' opacity='.04' fill='url(%23a)' style='isolation:isolate'/%3E%3Cpath d='M38.71 35.01L2.12.42A8 8 0 00.32 3.6a6.18 6.18 0 00-.32 2v61.35a7.36 7.36 0 002.12 5.18l34.9-35.54zm64-31.84a7.87 7.87 0 00-2-3.17L65.04 34.42l1.59 1.7 34.27 35.9a8 8 0 002.22-5.18V5.5a6.18 6.18 0 00-.42-2.33z' fill='%23231f20' opacity='.01' style='isolation:isolate'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    background-clip: content-box;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+/* ALIAS SECTION */
+#alias {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+hr {
+    width: 80%;
+    margin-top: -10px;
+}
+#button {
+    height: 26px;
+    margin-bottom: 20px;
+}
+
+#alias-button {
+    background-color: #0060df;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    float: right;
+    margin-right: 10%;
+    font-size: 1.15em;
+    border: none;
+}
+
+#alias-button:hover {
+    color:rgb(255, 113, 19);
+    font-size: 1.25em;
+}
+
+/* EMAIL SECTION */
+#email {
+    margin-top: 50px;
+    width: 80%;
+    margin:0 auto;
+}
+
+#account-forwarding {
+    display: flex;
+    justify-content: space-between; 
+}
+
+#account:hover {
+    color:rgb(255, 113, 19);
+    font-size: 1.15em;
+}
+
+#account-button {
+    background-color: #0060df;
+    border-radius: 3px;
+    color: white;
+    padding: 3px;
+    float: right;
+    margin-left: 5px;
+    border: none;
+}
+
+#account-button:hover {
+    color:rgb(255, 113, 19);
+    font-size: 1.15em;
+}
+
+#input-form {
+    display: none;
+}
+
+#forwarding i{
+    color:#0060df;
+} 
+
+#email-box {
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    background-color: white;
+    box-shadow: 0 0 5px 1px rgb(196, 191, 191);
+}
+
+#address {
+    padding-left: 10px;
+}
+
+#address p {
+    margin-top: -5px;
+}
+
+#show:hover {
+    color:rgb(255, 113, 19);
+    font-size: 1.35em;
+}
+
+#hide:hover {
+    color:rgb(255, 113, 19);
+    font-size: 1.35em;
+}
+
+#block-forward {
+    display: flex;
+    justify-content: space-between;
+}
+#blocked, #forwarded{
+    margin-right:15px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blocked p, #forwarded p {
+    margin-top: -10px;
+}
+
+#email-details {
+    box-shadow: 0 0 5px 1px rgb(196, 191, 191);
+    background-color: #ececf0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#details {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#details p {
+    margin: 5px;
+}
+
+#delete-button {
+    background-color: white;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 15px;
+    padding: 0px 15px;
+}
+
+#delete-button:hover {
+    color: rgb(255, 113, 19);
+    font-size: 1.5em;
+    padding: 5px 20px;
+}
+
+#undelete-button {
+    display: none;
+    background-color: white;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding: 0px 15px;
+}
+
+#undelete-button:hover {
+    color: rgb(255, 113, 19);
+    font-size: 1.5em;
+    padding: 5px 20px;
+}
+
+#text-tag {
+    margin-top: 25px;
+}
+
+footer {
+    background-color: #27294e;
+    height: 60px;
+    margin-top: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#logo-mozilla {
+    height: 25px;
+    padding: 20px;
+}
+
+#logo-mozilla:hover {
+    fill:rgb(255, 113, 19);
+}
+
+#footer-nav {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* JavaScript */
+#hide {
+    display: none;
+}
+
+#toggle-off {
+    display: none;
+}
+
+#account-name-heading {
+    display: none;
+}
+
+#edit-account-heading {
+    display: none;
+}
+
+#email-details {
+    display: none;
+}
+
+/* MOBILE */
+#mobile-alias-p {
+    display: none;
+}
+
+#mobile-block-forward {
+    display: none;
+}
+
+/* Media Query */
+@media screen and (max-width: 625px){
+    #home, #faq, #alias-p, #account, #block-forward, #email-forward {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: block;
+        color: white;
+        background-color: #2f2f54;
+        margin-top: 0px;
+    }
+
+    #mobile-menu a {
+        margin: 0px;
+    }
+
+    #open-menu {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #open-menu:hover {
+        color:rgb(255, 113, 19);
+        font-size: 1.6em;
+    }
+
+    #close-menu {
+        display: none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #close-menu:hover {
+        color:rgb(255, 113, 19);
+        font-size: 1.6em;
+    }
+
+    #menu-home {
+        display: none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 8px 10px;
+        text-align: right;
+    }
+
+    #menu-home .fa-circle {
+        color: #f18130 ;
+    }
+
+    #menu-faq {
+        display: none;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 8px 10px;
+        text-align: right;
+    }
+
+    #content {
+        background-image: none;
+    }
+
+    #alias {
+        display: flex;
+        justify-content: center;
+        font-size: 4vw;
+    }
+    
+    #button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    #alias-button {
+        margin-right: 0;
+    }
+
+    #mobile-alias-p {
+        display: block;
+        text-align: center;
+    }
+
+    #address h3 {
+        font-size: 3.75vw;
+    }
+
+    #address p {
+        font-size: 2.75vw;
+    }
+
+    #forwarding {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #email-box {
+        height: 20%;
+    }
+
+    #email-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #details {
+        width: 100%;
+    }
+
+    #date {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0px 5px;
+        padding: 3px 0px;
+    }
+
+    #delete-button {
+        width: 95%;
+        margin: 0px auto;
+        margin-bottom: 10px;
+    }
+
+    #undelete-button {
+        width: 100%;
+    }
+    
+    #mobile-block-forward {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mobile-blocked {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #mobile-blocked h2, #mobile-blocked p {
+        margin: 10px;
+    }
+
+    #mobile-forwarded {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        color: black;
+    }
+
+    #mobile-forwarded h2, #mobile-forwarded p {
+        margin: 10px;
+    }
+
+    footer {
+        height: 205px;
+        flex-direction: column;
+    }
+
+    #logo-mozilla {
+        padding-bottom: 1px;
+    }
+
+
+    #footer-nav {
+        flex-direction: column;
+        padding-top: 8px;
+    }
+}
